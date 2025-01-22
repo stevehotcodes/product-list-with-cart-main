@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Red Hat Text';
+    color: hsl(12, 20%, 44%)
+
+}
+
+body{
+    background-color: hsl(13, 31%, 94%)
+}
+
+.main-body-container{
+    display:flex;
+    /* border:2px solid red; */
+    flex:1;
+
+}
+.desserts-wrapper{
+    flex:0.7;
+    border:2px solid black;
+    display:flex;
+    flex-direction:column;
+
+}
+
+.dessert-title h3{
+    
+}
+
+.desserts-cards{
+    display:flex;
+    
+    
+}
+.dessert-card{
+    width:14rem;
+    border:2px solid red;
+    
+}
+.dessert-card .dessert-image{
+    width:99%;
+    height:14rem;
+    border-radius: 1rem;
+    position:relative;
+        
+}
+
+.dessert-card button{
+    border:none;
+    outline:none;
+    color:hsl(12, 20%, 44%);
+    font-size:0.7rem;
+    font-weight:700;
+    background-color: white;
+    
+}
+
+.add-to-cart-wrapper{
+    border:2px solid hsl(7, 20%, 60%);
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin:0 auto;
+    padding:0.4rem 1rem;
+    width:6rem;
+    z-index:2;
+    margin-top:-1.5rem;
+    position:relative;
+    background-color: white;
+    border-radius:1rem;
+}
+
+.dessert-details{
+    margin-top:1rem;
+    display: flex;
+    flex-direction: column;
+    gap:0.24rem;
+}
+
+.dessert-details span:nth-of-type(2){
+    font-weight:700;
+    color: hsl(14, 65%, 9%)
+}
+
+.dessert-details span:nth-of-type(3){
+    font-weight:900;
+    color: hsl(12, 20%, 44%)
+}
+
+
+
+
+.cart-wrapper{
+    flex:0.25;
+    border:2px solid blue;
+    height:2rem;
+}
