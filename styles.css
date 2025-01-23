@@ -13,31 +13,41 @@ body{
 
 .main-body-container{
     display:flex;
-    /* border:2px solid red; */
     flex:1;
-
 }
+
 .desserts-wrapper{
-    flex:0.7;
-    border:2px solid black;
+    flex:0.6;
     display:flex;
     flex-direction:column;
+    flex-wrap:wrap;
 
 }
 
-.dessert-title h3{
-    
+.dessert-title{
+    display: flex;
+    justify-content: left;
+    padding:0.6rem;
+
 }
+
+.dessert-title>h3{
+    font-size: 1.75rem;
+    color:hsl(14, 65%, 9%);
+}
+
+
 
 .desserts-cards{
     display:flex;
-    
-    
+    flex-wrap:wrap;
+    padding:0.6rem;
+    gap:0.4rem;
+
 }
+
 .dessert-card{
-    width:14rem;
-    border:2px solid red;
-    
+    width:17.5rem;    
 }
 .dessert-card .dessert-image{
     width:99%;
@@ -91,9 +101,26 @@ body{
 
 
 
-
 .cart-wrapper{
     flex:0.25;
-    border:2px solid blue;
-    height:2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:16rem;
+    background: white;
+    border-radius:1rem;
+}
+
+.cart-wrapper> .your-cart-title{
+    width:100%;
+    display: flex;
+    justify-content: left;
+
+}
+
+.cart-wrapper>.your-cart-title>h3{
+    color:hsl(14, 86%, 42%);
+    font-weight:bold;
+    padding:1rem;
+    font-size:1.75rem;
 }
